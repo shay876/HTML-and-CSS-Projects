@@ -4,3 +4,7 @@ p {
 	font-size: medium;
 	text-align: right;
 	}
+	
+h1 {
+	text-shadow: 2px 2px 4px black;
+	}
