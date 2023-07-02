@@ -5,98 +5,151 @@
 	<title>
 			Veterinary Website 1 Example
 	</title>
-	<link rel="stylesheet"
-		type="text/css"
-		href="csswebsite1.css">
+	<link rel="stylesheet" 
+		href="./CSS/shared.css">
+		<link rel="stylesheet" href="./CSS/animations.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Radley">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arsenal">
 </head>
 <body>
 	<!--navigation-->
-	<div>
-		<header>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-	</div>
+	<div class="wrap">
+		<div class="menu-container">
+			<ul class="menu">
+				<li><a href="#home">Home</a></li>
+				<li>About</li>
+				<li><a href="#gallery">Portfolio</a>
+				</li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
+	   </div> 
 	<!--end navigation-->
 	
 	<!--home-->
-	<div>
 		<div id="home">
-			<h1>Veterinary Hospital</h1>
-		</div>
-	</div>
-	<!--End home-->
-	
-	<!--gallery-->
-	<div>
-		<div id="gallery">
 			<div class="container">
-				<h2>Gallery</h2>
-				<div class="image-gallery">
-					<div class="column">
-						<div class="image-item">
-							<img src="babydog1 (2).jpg" alt="puppy dog" />
-							<div class="overlay"><span>Puppy</span></div>
-						</div>
-						<div class="image-item">
-							<img src="catphoto1.jpeg" alt="black cat" />
-							<div class="overlay"><span>Black Cat</span></div>
-						</div>
-						<div class="image-item">
-							<img src="dognose2.jpg" alt="dog nose" />
-							<div class="overlay"><span>Dog Nose</span></div>
-						</div>
-					</div>
-					<div class="column">
-						<div class="image-item">
-							<img src="dogsit1.jpg" alt="dog sitting" />
-							<div class="overlay"><span>Dog Sitting</span></div>
-						</div>
-						<div class="image-item">
-							<img src="dogteeth1.jpg" alt="dog teeth" />
-							<div class="overlay"><span>Dog Teeth</span></div>
-						</div>
-						<div class="image-item">
-							<img src="kitten1.jpg" alt="kitten" />
-							<div class="overlay"><span>Kitten</span></div>
-						</div>
-					</div>
+				<div class="text-center">
+					<span class="head-main">Veterinary Hospital</span>
 				</div>
 			</div>
 		</div>
-	<div>
-</div>
-</div>
-	<!--End gallery-->
 	
-	<!--Video section-->
-	<div id="video">
-	<h2>Video Title</h2>
-	<video width="320" height="240" controls>
-	<source src="pexels-tima-miroshnichenko-6235750-1280x720-25fps.mp4" type="video/mp4">
-	</video>
-	</div>
-	<!--end video section-->
+	<!--End home-->
 	
-	<!--Contact-->
-	<div>
-		<div id="contact">
-			<h2>Request an Appointment</h2>
-				<form action="" method="get" class="form">
-					First Name:<input type="text" name="First_Name"><br>
-					Last Name:<input type="text" name="Last_Name"><br>
-					E-mail:<input type="text" name="Email"><br>
-					<input type="submit" value="Submit">
-				</form>
+	<!--gallery-->
+		<div id="gallery">
+			<div class="container">
+				<h1>Gallery</h1>
+				<div class="flex-container">
+
+					<!--photo container-->
+					<div class="photo-container">
+						<div class="photo">
+							<img src="babydog1 (2).jpg" alt="puppy dog"  />
+							<div class="photo-overlay">
+								<h4>Puppy</h4>
+								<p>Puppy</p>
+							</div>
+						</div>
+					</div>
+
+					<!--photo container 2-->
+					<div class="photo-container">
+						<div class="photo">
+							<img src="catphoto1.jpeg" alt="cat photo"  />
+							<div class="photo-overlay">
+								<h4>Cat</h4>
+								<p>Cat</p>
+							</div>
+						</div>
+					</div>
+
+					<!--photo container 3-->
+
+					<div class="photo-container">
+						<div class="photo">
+							<img src="dognose2.jpg" alt="dog nose" />
+							<div class="photo-overlay">
+								<h4>Dog nose</h4>
+								<p>Dog Nose</p>
+							</div>
+						</div>
+					</div>
+
+					<!--photo container 4-->
+					<div class="photo-container">
+						<div class="photo">
+							<img src="dogsit1.jpg" alt="dog sitting" />
+							<div class="photo-overlay">
+								<h4>Dog sitting</h4>
+								<p>Dog sitting</p>
+							</div>
+						</div>
+					</div>
+
+					<!--photo container 5-->
+
+					<div class="photo-container">
+						<div class="photo">
+							<img src="dogteeth1.jpg" alt="dog teeth" />
+							<div class="photo-overlay">
+								<h4>dog teeth</h4>
+								<p>Dog Teeth</p>
+							</div>
+						</div>
+					</div>
+
+					<!--photo container 6-->
+
+					<div class="photo-container">
+						<div class="photo">
+							<img src="kitten1.jpg" alt="kitten" />
+							<div class="photo-overlay">
+							<h4>Kitten</h4>
+							<p>Kitten</p>
+							</div>
+						</div>
+					</div>
+				<div>
+			<!--end photo container-->
+				</div>
 		</div>
 	</div>
+	<!--End gallery-->
+	
+
+	
+	<!--Contact-->
+	
+		<div id="contact">
+			<div class="container">
+				<div class="heading-padding">
+				<h1 class="heading-padding">Request an Appointment</h1>
+				
+				<div class="reservation">
+					<h2>
+						<span>Book an Appointment</span>
+						<br/>Reserve your spot today!
+					</h2>
+					<p class="rsvp-text">Please provide your contact information</p>
+				<form action="" method="post">
+					<input class ="rsvp" type="text" value="" placeholder="First Name">
+					<input class="rsvp" type="text" value="" placeholder="Last Name">
+					<input class="rsvp" type="text" value="" placeholder="Email">
+					<div class="form-spacer">
+						<label class="terms">Terms and conditions</label>
+					</div>
+					<div class="submit">
+					<input type="submit" value="Submit">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+	
 	<!--End contact-->
 	
 	<!--footer-->
