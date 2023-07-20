@@ -37,86 +37,83 @@
 	
 	<!--End home-->
 	
-	<!--gallery-->
-		<div id="gallery">
-			<div class="container">
-				<h1>Gallery</h1>
-				<div class="flex-container">
 
-					<!--photo container-->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="babydog1 (2).jpg" alt="puppy dog"  />
-							<div class="photo-overlay">
-								<h4>Puppy</h4>
-								<p>Puppy</p>
-							</div>
-						</div>
-					</div>
 
-					<!--photo container 2-->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="catphoto1.jpeg" alt="cat photo"  />
-							<div class="photo-overlay">
-								<h4>Cat</h4>
-								<p>Cat</p>
-							</div>
-						</div>
-					</div>
 
-					<!--photo container 3-->
+	<!--LIGHTBOX-->
 
-					<div class="photo-container">
-						<div class="photo">
-							<img src="dognose2.jpg" alt="dog nose" />
-							<div class="photo-overlay">
-								<h4>Dog nose</h4>
-								<p>Dog Nose</p>
-							</div>
-						</div>
-					</div>
 
-					<!--photo container 4-->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="dogsit1.jpg" alt="dog sitting" />
-							<div class="photo-overlay">
-								<h4>Dog sitting</h4>
-								<p>Dog sitting</p>
-							</div>
-						</div>
-					</div>
-
-					<!--photo container 5-->
-
-					<div class="photo-container">
-						<div class="photo">
-							<img src="dogteeth1.jpg" alt="dog teeth" />
-							<div class="photo-overlay">
-								<h4>dog teeth</h4>
-								<p>Dog Teeth</p>
-							</div>
-						</div>
-					</div>
-
-					<!--photo container 6-->
-
-					<div class="photo-container">
-						<div class="photo">
-							<img src="kitten1.jpg" alt="kitten" />
-							<div class="photo-overlay">
-							<h4>Kitten</h4>
-							<p>Kitten</p>
-							</div>
-						</div>
-					</div>
-				<div>
-			<!--end photo container-->
-				</div>
-		</div>
+<!-- Images used to open the lightbox -->
+<div class="row">
+	<div class="column">
+	  <img src="plant1-small.png" onclick="openModal();currentSlide(1)" class="hover-shadow" style="width:80%">
 	</div>
-	<!--End gallery-->
+	<div class="column">
+	  <img src="plant2-small.png" onclick="openModal();currentSlide(2)" class="hover-shadow" style="width:80%">
+	</div>
+	<div class="column">
+	  <img src="plant3-small.png" onclick="openModal();currentSlide(3)" class="hover-shadow" style="width:80%">
+	</div>
+	<div class="column">
+	  <img src="plant4-small.png" onclick="openModal();currentSlide(4)" class="hover-shadow" style="width:80%">
+	</div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 4</div>
+		<img src="plant1.png" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 4</div>
+		<img src="plant2.png" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">3 / 4</div>
+		<img src="plant3.png" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">4 / 4</div>
+		<img src="plant4.png" style="width:100%">
+	  </div>
+  
+	  <!-- Next/previous controls -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	  <!-- Caption text -->
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+  
+	  <!-- Thumbnail image controls -->
+	  <div class="column">
+		<img class="demo" src="plant1-small.png" onclick="currentSlide(1)" alt="Nature">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="plant2-small.png" onclick="currentSlide(2)" alt="Snow">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="plant3-small.png" onclick="currentSlide(3)" alt="Mountains">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="plant4-small.png" onclick="currentSlide(4)" alt="Lights">
+	  </div>
+	</div>
+  </div>
+
+
+	<!--LIGHTBOX END-->
 	
 
 	
@@ -158,7 +155,7 @@
 </div>
 	<!--end footer-->
 	
-
+<script src="JS/One_Page_Website.js"></script>
 </body>
 </html>
 
